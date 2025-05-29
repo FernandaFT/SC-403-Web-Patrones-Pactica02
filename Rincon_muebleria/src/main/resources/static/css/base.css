@@ -1,0 +1,29 @@
+.font-family-parrafos{
+  font-family: 'Lato-Regular', sans-serif;  
+  font-size: 18px;
+}
+.font-family-titulos{
+    font-family: 'Oswald-Regular', sans-serif; 
+    font-size: 36px;
+}
+.font-family-subt{
+    font-family: 'Oswald-Regular', sans-serif;  
+    font-size: 24px;  
+}
+.font-family-main-nav{
+    font-family: 'Oswald-Regular', sans-serif;  
+    font-size: 20px;  
+}
+.font-family-main-subnav{
+    font-family: 'Oswald-Regular', sans-serif;  
+    font-size: 17px;  
+}
+.color-nav{
+    background-color: #33312b;
+}
+.color-primario{
+    background-color: #caa924;
+}
+.color-secundario{
+    background-color: #a18b37;
+}

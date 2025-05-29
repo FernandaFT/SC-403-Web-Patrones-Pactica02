@@ -17,14 +17,122 @@
         <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
     </head>
     <body>
-        <header th:fragment="header">
-            <p>Test.....</p>
+        <header th:fragment="header" class="position-relative text-white">
+            
+            <nav class="navbar navbar-expand-lg navbar-dark color-nav px-4">
+                <a class="navbar-brand" href="#">
+                    <img height="50px" src="/img/rincon-artesano-logo.jpg" alt="El Rincón del Artesano Logo"/>
+                </a>
+                <section class="collapse navbar-collapse w-100 justify-content-center">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 font-family-main-nav">
+                        <li class="nav-item"><a class="nav-link " href="#">Dormitorio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Comedor</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Oficina</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Patio y Exterior</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sobre Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
+                    </ul>
+                </section>
+            </nav>
+            <img src="/img/bg.png" class="w-100" style="height: 500px; object-fit: cover;" alt="imagen de una cocina"/>
+            <h1 class="font-family-banner position-absolute top-50 start-0 translate-middle-y ms-5">Ayudando a<br>los clientes a<br>decorar sus<br>espacios.</h1>
+                            
         </header>
+        
+        <!-- Categorías -->
+        <section th:fragment="section" class="text-center mt-5">
+            
+            <h3 class="font-family-titulos color-categorias">- CATEGORÍAS -</h3>
+            <p class="font-family-parrafos">Trabajamos con todo tipo de materiales en nuestra fábrica, y personalizamos al gusto del cliente.</p>
+            
+            <div class="d-flex flex-wrap justify-content-center gap-4 mt-4">
+                <div class="col-6 col-md-2 mb-4">
+                    <img src="/img/salas.png" class="img-fluid rounded mb-2" alt="Imagen ilustrativa de una sala."/>
+                    <a href="#" class="font-family-subt color-subcategorias color-subcategoriasbase text-decoration-none">SALAS</a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <img src="/img/dormitorio.png" class="img-fluid rounded mb-2" alt="Imagen ilustrativa de un dormitorio."/>
+                    <a href="#" class="font-family-subt color-subcategorias color-subcategoriasbase text-decoration-none">DORMITORIO</a>
+                </div>
+                    <div class="col-6 col-md-2 mb-4">
+                    <img src="/img/comedor.png" class="img-fluid rounded mb-2" alt="Imagen ilustrativa de un comedor."/>
+                    <a href="#" class="font-family-subt color-subcategorias color-subcategoriasbase text-decoration-none">COMEDOR</a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <img src="/img/oficina.png" class="img-fluid rounded mb-2" alt="Imagen ilustrativa de una oficina."/>
+                    <a href="#" class="font-family-subt color-subcategorias color-subcategoriasbase text-decoration-none">OFICINA</a>
+                </div>
+                <div class="col-6 col-md-2 mb-4">
+                    <img src="/img/patio.png" class="img-fluid rounded mb-2" alt="Imagen ilustrativa de un patio y exterior."/>
+                    <a href="#" class="font-family-subt color-subcategorias color-subcategoriasbase text-decoration-none">PATIO Y EXTERIOR</a>
+                </div>
+            </div>
+            
+        </section>
+        
+        <!-- Beneficios -->
+        <section class="color-primario py-4 text-white mt-5">
+            
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-md-4 mb-4 mb-md-0">
+                <img src="/fav/delivery-truck.png" style="height: 130px;" alt="Camión de reparto">
+                <p class="font-family-subt mt-3 ">ENTREGA A TODO EL PAÍS</p>
+              </div>
+              <div class="col-md-4 mb-4 mb-md-0">
+                <img src="/fav/guarantee.png" style="height: 130px;" alt="Garantía">
+                <p class="font-family-subt mt-3 ">GARANTÍA EN CADA PRODUCTO</p>
+              </div>
+              <div class="col-md-4">
+                <img src="/fav/furniture.png" style="height: 130px;" alt="Muebles">
+                <p class="font-family-subt mt-3 ">DELE PERSONALIDAD A SUS PIEZAS</p>
+              </div>
+            </div>
+          </div>
+            
+        </section>
+        
+        <!-- Productos destacados -->
+        <section class="text-center mt-5">
+            
+            <h3 class="font-family-titulos color-categorias">- PRODUCTOS DESTACADOS -</h3>
+            <p class="font-family-parrafos">Disfrute de nuestros productos más destacados</p>
+            
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-6 col-md-2 mb-4">
+                        <img src="/img/comoda.png" class="img-fluid rounded" alt="imagen de una comoda"/>
+                        <p class="font-family-parrafos mt-2 mb-0">Cómoda Cálida</p>
+                        <p class="font-family-parrafos">₡ 100.000</p>
+                    </div>
+                    <div class="col-6 col-md-2 mb-4">
+                        <img src="/img/escritorio.png" class="img-fluid rounded" alt="imagen un escritorio"/>
+                        <p class="font-family-parrafos mt-2 mb-0">Escritorio con Repisa</p>
+                        <p class="font-family-parrafos">₡ 78.000</p>
+                    </div>
+                    <div class="col-6 col-md-2 mb-4">
+                        <img src="/img/cama.png" class="img-fluid rounded" alt="imagen una cama"/>
+                        <p class="font-family-parrafos mt-2 mb-0">Cama Azteca</p>
+                        <p class="font-family-parrafos">₡ 220.000</p>
+                    </div>
+                    <div class="col-6 col-md-2 mb-4">
+                        <img src="/img/comedor-sillas.png" class="img-fluid rounded" alt="imagen una juego de comedor"/>
+                        <p class="font-family-parrafos mt-2 mb-0">Mesa de Comedor Axel</p>
+                        <p class="font-family-parrafos">₡ 115.000</p>
+                    </div>
+                    <div class="col-6 col-md-2 mb-4">
+                        <img src="/img/butaca.png" class="img-fluid rounded" alt="imagen una butaca"/>
+                        <p class="font-family-parrafos mt-2 mb-0">Butaca Cahuita</p>
+                        <p class="font-family-parrafos">₡ 30.000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <footer th:fragment="footer" class="p-0.5 mt-5">
+            
             <div class="color-nav text-white py-4">
                 <div class="container">
-                    <!-- Centramos horizontalmente las columnas -->
                     <div class="row justify-content-center">
 
                         <!-- Empresa -->
@@ -39,7 +147,7 @@
                         <!-- Contáctenos -->
                         <div class="col-md-4 mb-3">
                             <h5 class="font-family-main-nav text-uppercase">Contáctenos</h5>
-                            <p class="font-family-main-subnav mb-1">Cartago: Tejar contiguo a la municipalidad del Guarco</p>
+                            <p class="font-family-main-subnav mb-1">Cartago: Tejar contiguo a <br>la municipalidad del Guarco</p>
                             <p class="font-family-main-subnav mb-0">WhatsApp: +506 8374-6278</p>
                         </div>
 
@@ -48,7 +156,7 @@
                             <h5 class="font-family-main-nav text-uppercase">Redes Sociales</h5>
                             <p class="mb-0">
                                 <i class="bi bi-facebook me-2"></i>
-                                <a href="#" class="font-family-main-subnav text-white text-decoration-none">El Rincón del Artesano</a>
+                                <a href="https://www.facebook.com/elrincondelartesanocr/?locale=es_LA" class="font-family-main-subnav text-white text-decoration-none">El Rincón del Artesano</a>
                             </p>
                         </div>
 
@@ -56,8 +164,9 @@
                 </div>
             </div>
             <div class="color-primario">
-                <p class="color-primario font-family-main-subnav lead text-center py-2">[[#{plantilla.derechos}]] &COPY;</p>
+                <p class="color-primario font-family-main-subnav lead text-center py-2 mb-0">[[#{plantilla.derechos}]] &COPY;</p>
             </div>
+            
         </footer>
 
     </body>

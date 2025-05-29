@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+    <head th:fragment="head">
+        <title>El Rincón del Artesano</title>
+        <meta charset="UTF-8"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/fav/furniture-store-16x16.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/fav/furniture-store-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="64x64" href="/fav/furniture-store-64x64.png"/>
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+        <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}"/>
+        <link href="/css/base.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+            <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+            <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+            <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    </head>
+    <body>
+        <header th:fragment="header" class="position-relative text-white">
+
+            <nav class="navbar navbar-expand-lg navbar-dark color-nav px-4">
+                <a class="navbar-brand" href="/">
+                    <img height="50px" src="/img/rincon-artesano-logo.jpg" alt="El Rincón del Artesano Logo"/>
+                </a>
+                <section class="collapse navbar-collapse w-100 justify-content-center">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 font-family-main-nav">
+                        <li class="nav-item"><a class="nav-link " href="/salas">Salas</a></li>
+                        <li class="nav-item"><a class="nav-link " href="/dormitorio">Dormitorio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/comedor">Comedor</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/oficina">Oficina</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/patioyexterior">Patio y Exterior</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/sobrenosotros">Sobre Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contactenos">Contáctenos</a></li>
+                    </ul>
+                </section>
+            </nav>
+
+        </header>
+
+        <main th:fragment="main" class="container my-5">
+            
+            <h1 class="text-center font-family-seccion-titulo color-seccion-titulo">SALAS</h1>
+            <p class="text-center color-seccion-titulo"><small><a class="text-decoration-none color-seccion-titulo" href="/">Inicio</a> > <a class="text-decoration-none color-seccion-titulo" href="/salas">Salas</a> > Mesas de Centro</small></p>
+            <hr class="full-width-hr"/>
+            
+            <!-- Banner -->
+            <div class="align-items-center mb-4 mt-5">
+                <div class="col-md-6">
+                    <h2 class="color-subcategoriasbase font-family-banner">Nueva Colección<br>en 2025</h2>
+                </div> 
+            </div> 
+            <div class="pt-5 px-3  color-primario full-width-bg">
+                <h1 class="text-white fw-bold font-family-banner2">Mesas de Centro</h1>
+            </div>
+            
+            <!-- Grid de Productos -->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-5">
+                <div class="col">
+                    <div class="border border-2 border-warning p-2 text-center h-100">
+                        <img src="/img/mesa-1.png" class="img-fluid mb-2" alt="Mesa de Centro"/>
+                        <p class="mb-0 fw-semibold font-family-parrafos">Mesa de Centro Oval</p>
+                        <p class="mb-2 font-family-parrafos">₡ 100.000</p>
+                        <a href="#" class="btn btn-producto font-family-subt text-white">ver producto</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border border-2 border-warning p-2 text-center h-100">
+                        <img src="/img/mesa-2.png" class="img-fluid mb-2" alt="Mesa de Centro"/>
+                        <p class="mb-0 fw-semibold font-family-parrafos">Mesa Lateral</p>
+                        <p class="mb-2 font-family-parrafos">₡ 150.000</p>
+                        <a href="#" class="btn btn-producto font-family-subt text-white">ver producto</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border border-2 border-warning p-2 text-center h-100">
+                        <img src="/img/mesa-3.png" class="img-fluid mb-2" alt="Mesa de Centro"/>
+                        <p class="mb-0 fw-semibold font-family-parrafos">Mesa Auxiliar</p>
+                        <p class="mb-2 font-family-parrafos">₡ 50.000</p>
+                        <a href="#" class="btn btn-producto font-family-subt text-white">ver producto</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border border-2 border-warning p-2 text-center h-100">
+                        <img src="/img/mesa-4.png" class="img-fluid mb-2" alt="Mesa de Centro"/>
+                        <p class="mb-0 fw-semibold font-family-parrafos">Mesa Central Circular</p>
+                        <p class="mb-2 font-family-parrafos">₡ 97.000</p>
+                        <a href="#" class="btn btn-producto font-family-subt text-white">ver producto</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border border-2 border-warning p-2 text-center h-100">
+                        <img src="/img/mesa-4.png" class="img-fluid mb-2" alt="Mesa de Centro"/>
+                        <p class="mb-0 fw-semibold font-family-parrafos">Mesa Central Circular V2</p>
+                        <p class="mb-2 font-family-parrafos">₡ 87.000</p>
+                        <a href="#" class="btn btn-producto font-family-subt text-white">ver producto</a>
+                    </div>
+                </div>
+            </div>
+                
+        </main>
+
+        <footer th:fragment="footer" class="p-0.5 mt-5">
+
+            <div class="color-nav text-white py-4">
+                <div class="container">
+                    <div class="row justify-content-center">
+
+                        <!-- Empresa -->
+                        <div class="col-md-4 mb-3">
+                            <h5 class="font-family-main-nav text-uppercase">Empresa</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="/sobrenosotros" class="font-family-main-subnav text-white text-decoration-none">Sobre Nosotros</a></li>
+                                <li><a href="/garantias" class="font-family-main-subnav text-white text-decoration-none">Garantías y Políticas</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Contáctenos -->
+                        <div class="col-md-4 mb-3">
+                            <h5 class="font-family-main-nav text-uppercase">Contáctenos</h5>
+                            <p class="font-family-main-subnav mb-1">Cartago: Tejar contiguo a <br>la municipalidad del Guarco</p>
+                            <p class="font-family-main-subnav mb-0">WhatsApp: +506 8374-6278</p>
+                        </div>
+
+                        <!-- Redes Sociales -->
+                        <div class="col-md-4 mb-3">
+                            <h5 class="font-family-main-nav text-uppercase">Redes Sociales</h5>
+                            <p class="mb-0">
+                                <i class="bi bi-facebook me-2"></i>
+                                <a href="https://www.facebook.com/elrincondelartesanocr/?locale=es_LA" class="font-family-main-subnav text-white text-decoration-none">El Rincón del Artesano</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="color-primario">
+                <p class="color-primario font-family-main-subnav lead text-center py-2 mb-0">[[#{plantilla.derechos}]] &COPY;</p>
+            </div>
+
+        </footer>
+
+    </body>
+</html>

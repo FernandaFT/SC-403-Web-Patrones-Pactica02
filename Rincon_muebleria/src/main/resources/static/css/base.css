@@ -51,6 +51,9 @@
 .color-seccion-titulo{
     color:#756a3c;
 }
+.color-seccion-subtitulo{
+    color:#caa924;
+}
 
 .card-stack {
     position: relative;
@@ -119,4 +122,8 @@
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+}
+.borde-amarillo {
+    border-left: 3px solid #caa924;
+    border-right: 3px solid #caa924;
 }

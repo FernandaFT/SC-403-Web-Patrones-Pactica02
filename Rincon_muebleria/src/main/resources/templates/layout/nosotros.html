@@ -38,44 +38,58 @@
 
         </header>
 
-        <main th:fragment="main" class="container my-5">
+        <main th:fragment="main">
+            <section class="mt-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        
+                        <!-- Sobre nosotros -->
+                        <div class="col-md-6 text-md-start text-center mb-4 mb-md-0">
+                            <p class="mb-0">Sobre nosotros</p>
+                            <h1 class="fw-bold font-family-banner color-seccion-subtitulo">
+                                Ayudando a los clientes a <br> decorar sus espacios.
+                            </h1>
+                            <p class="font-family-parrafos" style="max-width: 500px;">
+                                Somos una propuesta llena de inspiración en la naturaleza para llevarla a tu vida cotidiana y a tus espacios. 
+                                En El Rincón del Artesano creemos que cada mueble debe ser una extensión de la belleza natural, combinando 
+                                estilo, comodidad y funcionalidad.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <video width="500" height="350" controls>
+                                <source src="/videos/G3_SC305_MN_AnuncioPromocional.mp4" type="video/mp4">
+                                    Your browser does not support the <code>video</code> tag.
+                            </video>
+                        </div>
+                        
+                        <!-- Nuestra Misión -->
+                        <section class="py-5 mt-5">
+                            <div class="container text-center">
+                                <p class="mb-0">Nuestra Historia</p>
+                                <h2 class="fw-bold font-family-banner color-seccion-subtitulo">El Rincón del Artesano</h2>
+                                <p class="font-family-parrafos mx-auto" style="max-width: 80%;">Somo una tienda de muebles costarricense que ha sido parte de la tradición artesanal local desde 2016 en la provincia de Cartago. Fundada por un artesano apasionado 
+                                por la ebanistería, nuestra mueblería se ha destacado por la fabricación de muebles a medida, combinando técnicas tradicionales con innovaciones modernas. Desde 
+                                nuestros inicios, hemos mantenido un compromiso firme con la calidad y la satisfacción de nuestros clientes.</p>
+                                <p class="font-family-parrafos mx-auto" style="max-width: 80%;">Hemos crecido constantemente, integrando nuevas tecnologías y estilos para adaptarnos a las demandas del mercado actual sin  perder nuestra esencia artesanal. Cada 
+                                pieza que fabricamos es un reflejo de la dedicación y el cuidado que ponemos en nuestro trabajo, utilizando materiales de alta calidad y técnicas que han sido 
+                                perfeccionadas a lo largo de los años.</p>
 
-            <h1 class="text-center font-family-seccion-titulo color-seccion-titulo">SALAS</h1>
-            <p class="text-center color-seccion-titulo"><small><a class="text-decoration-none color-seccion-titulo" href="/">Inicio</a> > Salas</small></p>
-            <hr class="full-width-hr">
-            
-            <!-- Sección Mesa de Centro -->
-            <div class="row align-items-center my-5">
-                <div class="col-md-6 position-relative">
-                    <div>
-                        <img src="/img/bg-mesa-centro.png" alt="background mesa de centro "/>
-                    </div>
-                </div>
+                                <p class="font-family-parrafos mx-auto" style="max-width: 80%;">En la actualidad seguimos siendo un referente en la fabricación de muebles de alta calidad, ofreciendo productos únicos que reflejan la belleza y funcionalidad de la 
+                                artesanía costarricense. Estamos orgullosos de tener un grupo de artesanos talentosos que comparten nuestra visión y compromiso con la excelencia. Nuestro objetivo es
+                                continuar progresando y creciendo.</p>
 
-                <div class="col-md-6">
-                    <div class="card-stack p-4 color-primario shadow text-center">
-                        <h5 class="font-family-titulos">MESA DE CENTRO</h5>
-                        <p class="font-family-parrafos mt-3">Los centros de mesa son piezas decorativas diseñadas para realzar la estética de cualquier espacio, especialmente mesas en eventos o en el hogar. Estas piezas, elaboradas con creatividad y detalle, combinan funcionalidad y estilo, convirtiéndose en el punto focal del ambiente.</p>
-                        <a href="/mesa_centro" class="btn btn-light btn-outline-dark mt-3">Ver Mesas de Centro</a>
-                    </div>
-                </div>
-            </div>
+                                <p class="font-family-parrafos mx-auto" style="max-width: 80%;">Además de nuestro compromiso con la calidad, también buscamos brindar un servicio al cliente excepcional. Consideramos que cada cliente es unico y tiene derecho 
+                                a una atención individualizada para encontrar las soluciones de mobiliario que se ajusten mejor a sus necesidades y preferencias. Tanto si buscas una pieza exclusiva
+                                para tu casa u opciones integrales para tu oficina, aquí podemos asistirte en la creación de ambientes que motiven y agraden.</p>
 
-            <!-- Sección de Sofás -->
-            <div class="row align-items-center my-5">
-                <div class="col-md-6">
-                    <div class="card-stack2 p-4 color-primario shadow text-center">
-                        <h5 class="font-family-titulos">SOFÁS</h5>
-                        <p class="font-family-parrafos mt-3">Los sofás son muebles esenciales en cualquier espacio de descanso o convivencia, diseñados para ofrecer comodidad y estilo. Disponibles en una variedad de tamaños, materiales y diseños, los sofás combinan funcionalidad con estética, adaptándose a diferentes necesidades y estilos decorativos.</p>
-                        <a href="#" class="btn btn-light btn-outline-dark mt-3">Ver Sofás</a>
+                                <p class="font-family-parrafos mx-auto" style="max-width: 80%;">En El Rincón del Artesano, la tradición convive con la innovación, y la calidad artesanal se une a la modernidad para ofrecerte lo mejor en mobiliario. Te invitamos a
+                                descubrir nuestra colección y a formar parte de nuestra historia, una historia que sigue creciendo y evolucionando con cada pieza que creamos.</p>
+                            </div>
+                        </section>
                     </div>
                 </div>
-                <div class="col-md-6 position-relative text-end">
-                    <div>
-                        <img src="/img/bg-sofas.png" alt="background sofa"/>
-                    </div>
-                </div>
-            </div>
+            </section>
+
         </main>
 
         <footer th:fragment="footer" class="p-0.5 mt-5">

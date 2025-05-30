@@ -38,44 +38,72 @@
 
         </header>
 
-        <main th:fragment="main" class="container my-5">
+        <main th:fragment="main">
 
-            <h1 class="text-center font-family-seccion-titulo color-seccion-titulo">SALAS</h1>
-            <p class="text-center color-seccion-titulo"><small><a class="text-decoration-none color-seccion-titulo" href="/">Inicio</a> > Salas</small></p>
-            <hr class="full-width-hr">
-            
-            <!-- Sección Mesa de Centro -->
-            <div class="row align-items-center my-5">
-                <div class="col-md-6 position-relative">
-                    <div>
-                        <img src="/img/bg-mesa-centro.png" alt="background mesa de centro "/>
-                    </div>
+                <!-- Encabezado principal -->
+                <h2 class="fw-bold font-family-banner mt-4 px-3 mb-0">Contáctenos</h2>
+                <p class="color-seccion-subtitulo font-family-parrafos px-3">Estamos para servirle</p>
+
+                <!-- Solicite su cita -->
+                <div class="my-4 text-center">
+                    <h4 class="fw-bold font-family-titulos d-inline-block border-bottom border-4 border-warning pb-1 px-2">SOLICITE SU CITA</h4>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="card-stack p-4 color-primario shadow text-center">
-                        <h5 class="font-family-titulos">MESA DE CENTRO</h5>
-                        <p class="font-family-parrafos mt-3">Los centros de mesa son piezas decorativas diseñadas para realzar la estética de cualquier espacio, especialmente mesas en eventos o en el hogar. Estas piezas, elaboradas con creatividad y detalle, combinan funcionalidad y estilo, convirtiéndose en el punto focal del ambiente.</p>
-                        <a href="/mesa_centro" class="btn btn-light btn-outline-dark mt-3">Ver Mesas de Centro</a>
+                <!-- Contactos -->
+                <div>
+                    <div class="text-center">
+                        <i class="bi bi-whatsapp text-success fs-3"></i>
+                        <span class="fw-medium fs-5">(+506) 8374-6278</span>
+                    </div>
+                    <div class="text-center">
+                        <i class="bi bi-facebook text-primary fs-3"></i>
+                        <span class="fw-medium fs-5">El Rincón del Artesano</span>
                     </div>
                 </div>
-            </div>
-
-            <!-- Sección de Sofás -->
-            <div class="row align-items-center my-5">
-                <div class="col-md-6">
-                    <div class="card-stack2 p-4 color-primario shadow text-center">
-                        <h5 class="font-family-titulos">SOFÁS</h5>
-                        <p class="font-family-parrafos mt-3">Los sofás son muebles esenciales en cualquier espacio de descanso o convivencia, diseñados para ofrecer comodidad y estilo. Disponibles en una variedad de tamaños, materiales y diseños, los sofás combinan funcionalidad con estética, adaptándose a diferentes necesidades y estilos decorativos.</p>
-                        <a href="#" class="btn btn-light btn-outline-dark mt-3">Ver Sofás</a>
+                
+                <!-- Info adicional -->
+                <section class="color-primario text-black py-4 mt-5">
+                    <div class="container text-center">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 mb-3">
+                                <h5 class="fw-bold">Nuestra Tienda</h5>
+                                <p class="mb-0">Costa Rica, Cartago, Tejar</p>
+                                <small>Contiguo a la municipalidad del Guarco</small>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <h5 class="fw-bold">Horario de atención</h5>
+                                <p class="mb-0">Lunes a viernes: 1:00 p.m. - 9:00 p.m.</p>
+                                <small>Sábados y domingos cerrado</small>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 position-relative text-end">
-                    <div>
-                        <img src="/img/bg-sofas.png" alt="background sofa"/>
+                </section>
+                
+                <!-- Ubicanos -->
+                <article class="d-flex justify-content-center mt-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4540.16481663372!2d-83.94142762440575!3d9.845672775670119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa11f0055719abb%3A0xa8c520e1832e435f!2sMuebler%C3%ADa%20El%20Rinc%C3%B3n%20del%20Artesano!5e1!3m2!1sen!2scr!4v1748564448592!5m2!1sen!2scr" width="900" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+                
+                <!-- Beneficios -->
+                <section class="container py-5 mt-5">
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-4">
+                            <img style="height: 80px;" src="/fav/delivery.png" alt="Camión de reparto"/>
+                            <h6 class="font-family-subt fw-bold mt-2">Entregas</h6>
+                            <small>Realizamos entrega en el GAM</small> 
+                        </div>
+                        <div class="col-md-4 mb-4 borde-amarillo">
+                            <img style="height: 80px;" src="/fav/credit-cards.png" alt="Tarjetas de credito o debito"/>
+                            <h6 class="font-family-subt fw-bold mt-2">Pago Seguro</h6>
+                            <small>Diferentes métodos de pago</small> 
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <img style="height: 80px;" src="/fav/chat.png" alt="burbuja de chat en linea"/>
+                            <h6 class="font-family-subt fw-bold mt-2">Chatea con nosotros</h6>
+                            <small>Ayudamos en lo que le apasiona</small> 
+                        </div>
                     </div>
-                </div>
-            </div>
+                </section>
         </main>
 
         <footer th:fragment="footer" class="p-0.5 mt-5">

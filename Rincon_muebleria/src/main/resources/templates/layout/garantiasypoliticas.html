@@ -38,44 +38,52 @@
 
         </header>
 
-        <main th:fragment="main" class="container my-5">
-
-            <h1 class="text-center font-family-seccion-titulo color-seccion-titulo">SALAS</h1>
-            <p class="text-center color-seccion-titulo"><small><a class="text-decoration-none color-seccion-titulo" href="/">Inicio</a> > Salas</small></p>
-            <hr class="full-width-hr">
-            
-            <!-- Sección Mesa de Centro -->
-            <div class="row align-items-center my-5">
-                <div class="col-md-6 position-relative">
+        <main th:fragment="main">
+            <section class=" container mt-5">
+                <!-- Garantías y Políticas -->
+                <section class="py-5 mt-5">
+                    <div class="container text-left">
+                        <h1 class="w-bold font-family-banner mb-0">Garantías y Políticas</h1>
+                        <h4 class="font-family-subt color-seccion-subtitulo mt-3">Garantías de la empresa</h4>
+                        <p class="font-family-parrafos" style="max-width: 80%;">El Rincón del Artesano, tenemos plena confianza en la calidad de nuestros muebles y brindamos garantías específicas para garantizar su satisfacción. 
+                        Es fundamental que revises con atención estos términos, ya que no cumplirlos puede anular tu garantía.</p>
+                        <ul class="font-family-parrafos">
+                          <li>En el momento de la compra y la entrega, es fundamental que el cliente examine el producto con atención. Únicamente se aceptarán reclamaciones vinculadas a fallas de fabricación y ejercicio de garantía...</li>
+                          <li>Los artículos comprados con descuentos especiales o promociones deben ser abonados completamente al contado...</li>
+                          <li>El artículo comprado será entregado dentro del período especificado en la descripción del artículo...</li>
+                          <li>Los artículos reservados deben ser recogidos en un plazo de 60 días después de la reserva...</li>
+                          <li>Para que un reclamo de garantía sea aceptado, el cliente debe mostrar el certificado o la factura original del artículo.</li>
+                          <li>El costo del producto no incluye el servicio de transporte...</li>
+                        </ul>
+                        <p class="font-family-parrafos">-  La duración de la garantía por fallos de fabricación varía de acuerdo con el producto comprado:</p>
+                        <p class="font-family-parrafos">- 30 días: Sillas (Comedor, oficina)</p>
+                        <p class="font-family-parrafos">-  60 días: Sofás simples, Armarios, cómodas, bases para colchón, Alacenas.</p>
+                        <p class="font-family-parrafos">-  90 días: Mesas (para el comedor, centro y escritorios), estantes y archivadores.</p>
+                        <p class="font-family-parrafos">-  180 días: Camas.</p>
+                        <p class="font-family-parrafos"><b>Nota: La garantía NO SE APLICA en artículos con descuentos especiales y/o promociones.</b></p>
+                    </div>
                     <div>
-                        <img src="/img/bg-mesa-centro.png" alt="background mesa de centro "/>
+                        <h4 class="font-family-subt color-seccion-subtitulo mt-3">Políticas de la empresa</h4>
+                        <ul class="font-family-parrafos">
+                          <li>La satisfacción del cliente es nuestra prioridad más importante.
+                              Si no estás totalmente contento con tu compra, deseamos que nos lo informes para poder solucionarlo de la mejor forma posible. 
+                              Nos dedicamos a proporcionar respuestas rápidas y eficaces para cualquier problema que pueda enfrentar.</li>
+                          <li>Te recomendamos orientación sin costo para asistirte en la decoración de tu casa y en la elección de los muebles que mejor se adapten a tus necesidades.
+                              No dudes en ponerte en contacto con nosotros para obtener asesoría experta y adaptada a tus necesidades.</li>
+                          <li>Aprovecha la facilidad de realizar compras desde tu casa en cualquier hora del día. Con solo unos clics, puedes descubrir y comprar una variedad extensa de muebles a precios atractivos.
+                              Nos dedicamos a facilitar que tu experiencia de compra en línea sea lo más cómoda y sencilla que se pueda.</li>
+                          <li>Brindamos servicio al cliente para ayudarle a través de nuestro sistema de contacto en línea y por vía telefónica.
+                              Estamos presentes para resolver tus preguntas y asistirte en cada fase de tu compra en El Rincón del Artesano.</li>
+                          <li>Nos dedicamos a proteger tu privacidad y gestionamos tus datos personales con total discreción, cumpliendo con la Ley No. 8968 de Protección de la Persona 
+                              en relación al Tratamiento de sus Datos Personales de Costa Rica.Tu información se emplea exclusivamente para gestionar tus pedidos y optimizar tu experiencia de compra.</li>
+                          <li>Te enviaremos una notificación por teléfono y correo electrónico cuando tu producto esté preparado para recoger en nuestra tienda. Dispone de un período de 5 días laborables para efectuar el retiro.
+                              Una vez culminado este tiempo, se cobrará una tarifa de 1.000 colones al día por el almacenamiento. Si el artículo no se recoge en un mes, el costo de almacenamiento se elevará a 10,000 colones por día.
+                              Esto nos permite manejar el espacio de forma eficaz y brindar un servicio mejorado.</li>
+                        </ul>
                     </div>
-                </div>
+                </section>
+            </section>
 
-                <div class="col-md-6">
-                    <div class="card-stack p-4 color-primario shadow text-center">
-                        <h5 class="font-family-titulos">MESA DE CENTRO</h5>
-                        <p class="font-family-parrafos mt-3">Los centros de mesa son piezas decorativas diseñadas para realzar la estética de cualquier espacio, especialmente mesas en eventos o en el hogar. Estas piezas, elaboradas con creatividad y detalle, combinan funcionalidad y estilo, convirtiéndose en el punto focal del ambiente.</p>
-                        <a href="/mesa_centro" class="btn btn-light btn-outline-dark mt-3">Ver Mesas de Centro</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sección de Sofás -->
-            <div class="row align-items-center my-5">
-                <div class="col-md-6">
-                    <div class="card-stack2 p-4 color-primario shadow text-center">
-                        <h5 class="font-family-titulos">SOFÁS</h5>
-                        <p class="font-family-parrafos mt-3">Los sofás son muebles esenciales en cualquier espacio de descanso o convivencia, diseñados para ofrecer comodidad y estilo. Disponibles en una variedad de tamaños, materiales y diseños, los sofás combinan funcionalidad con estética, adaptándose a diferentes necesidades y estilos decorativos.</p>
-                        <a href="#" class="btn btn-light btn-outline-dark mt-3">Ver Sofás</a>
-                    </div>
-                </div>
-                <div class="col-md-6 position-relative text-end">
-                    <div>
-                        <img src="/img/bg-sofas.png" alt="background sofa"/>
-                    </div>
-                </div>
-            </div>
         </main>
 
         <footer th:fragment="footer" class="p-0.5 mt-5">

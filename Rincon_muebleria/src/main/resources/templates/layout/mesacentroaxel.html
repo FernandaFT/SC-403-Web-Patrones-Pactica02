@@ -41,65 +41,82 @@
         <main th:fragment="main" class="container my-5">
             
             <h1 class="text-center font-family-seccion-titulo color-seccion-titulo">SALAS</h1>
-            <p class="text-center color-seccion-titulo"><small><a class="text-decoration-none color-seccion-titulo" href="/">Inicio</a> > <a class="text-decoration-none color-seccion-titulo" href="/salas">Salas</a> > Mesas de Centro</small></p>
+            <p class="text-center color-seccion-titulo"><small><a class="text-decoration-none color-seccion-titulo" href="/">Inicio</a> > 
+                    <a class="text-decoration-none color-seccion-titulo" href="/salas">Salas</a> > 
+                    <a class="text-decoration-none color-seccion-titulo" href="/mesa_centro">Mesas de Centro</a> > Mesa de Centro Axel</small></p>
             <hr class="full-width-hr"/>
             
-            <!-- Banner -->
-            <div class="align-items-center mb-4 mt-5">
-                <div class="col-md-6">
-                    <h2 class="color-subcategoriasbase font-family-banner">Nueva Colección<br>en 2025</h2>
-                </div> 
-            </div> 
-            <div class="pt-5 px-3  color-primario full-width-bg text-center">
-                <h1 class="text-white fw-bold font-family-banner2">Mesas de Centro</h1>
-            </div>
-            
-            <!-- Grid de Productos -->
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-5">
-                <div class="col">
-                    <div class="border border-2 border-warning p-2 text-center h-100">
-                        <img src="/img/mesa-1.png" class="img-fluid mb-2" alt="Mesa de Centro"/>
-                        <p class="mb-0 fw-semibold font-family-parrafos">Mesa de Centro Axel</p>
-                        <p class="mb-2 font-family-parrafos">₡ 100.000</p>
-                        <a href="/mesa_centro_axel" class="btn btn-producto font-family-subt text-white">ver producto</a>
+            <!-- Producto principal imagenes -->
+            <section class="mt-5">
+                <div class="row align-items-start">
+                    <div class="col-md-6 text-center">
+                        <img src="/img/mesa-axel.png" class="img-fluid rounded mb-3" style="max-height: 400px;" alt="Mesa de centro axel"/>
+                        <div class="d-flex justify-content-center gap-2 mt-3">
+                            <img src="/img/mesaopcion1.png" class="img-thumbnail" style="width: 80px; height: auto;" alt="opcion 1"/>
+                            <img src="/img/mesaopcion2.png" class="img-thumbnail" style="width: 80px; height: auto;" alt="opcion 1"/>
+                            <img src="/img/mesaopcion3.png" class="img-thumbnail" style="width: 80px; height: auto;" alt="opcion 1"/>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="border border-2 border-warning p-2 text-center h-100">
-                        <img src="/img/mesa-2.png" class="img-fluid mb-2" alt="Mesa de Centro"/>
-                        <p class="mb-0 fw-semibold font-family-parrafos">Mesa Lateral</p>
-                        <p class="mb-2 font-family-parrafos">₡ 150.000</p>
-                        <a href="#" class="btn btn-producto font-family-subt text-white">ver producto</a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="border border-2 border-warning p-2 text-center h-100">
-                        <img src="/img/mesa-3.png" class="img-fluid mb-2" alt="Mesa de Centro"/>
-                        <p class="mb-0 fw-semibold font-family-parrafos">Mesa Auxiliar</p>
-                        <p class="mb-2 font-family-parrafos">₡ 50.000</p>
-                        <a href="#" class="btn btn-producto font-family-subt text-white">ver producto</a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="border border-2 border-warning p-2 text-center h-100">
-                        <img src="/img/mesa-4.png" class="img-fluid mb-2" alt="Mesa de Centro"/>
-                        <p class="mb-0 fw-semibold font-family-parrafos">Mesa Central Circular</p>
-                        <p class="mb-2 font-family-parrafos">₡ 97.000</p>
-                        <a href="#" class="btn btn-producto font-family-subt text-white">ver producto</a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="border border-2 border-warning p-2 text-center h-100">
-                        <img src="/img/mesa-4.png" class="img-fluid mb-2" alt="Mesa de Centro"/>
-                        <p class="mb-0 fw-semibold font-family-parrafos">Mesa Central Circular V2</p>
-                        <p class="mb-2 font-family-parrafos">₡ 87.000</p>
-                        <a href="#" class="btn btn-producto font-family-subt text-white">ver producto</a>
-                    </div>
-                </div>
-            </div>
-                
-        </main>
+                       <!-- Información del producto -->
+                    <div class="col-md-6">
+                        <h2 class="fw-bold font-family-titulos">Mesa de Centro Axel</h2>
+                        <p class="fs-4 font-family-parrafos mb-0">₡ 100.000</p>
+                        <p class="font-family-parrafos">Impuestos incluidos. Gastos de envío calculados al finalizar la compra.</p>
 
+                          <!-- Selector de cantidad -->
+                        <div class="d-flex align-items-center gap-2 my-3">
+                            <button class="btn-producto text-white px-3">−</button>
+                            <span class="fs-5">1</span>
+                            <button class="btn-producto text-white px-3">+</button>
+                        </div>
+
+                          <!-- Botón de WhatsApp -->
+                        <a href="#" class="btn btn-success d-inline-flex align-items-center gap-2">
+                            <i class="bi bi-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Ficha técnica -->
+            <section class="mt-5">
+                <div class="container">
+                    <div class="color-secundario text-white px-4 py-3">
+                      <h5 class="mb-0 fw-bold font-family-parrafos">FICHA TÉCNICA</h5>
+                    </div>
+                    <!-- Detalles técnicos -->
+                    <div class="color-primario px-4 py-3">
+                      <div class="row text-center fw-bold">
+                        <div class="col-md-3 mb-1 text-white font-family-parrafos">
+                          <p>Peso (Kg):</p>
+                          <p>35 kg</p>
+                        </div>
+                        <div class="col-md-3 mb-2 text-white font-family-parrafos">
+                          <p>Marca:</p>
+                          <p>El Rincón del Artesano</p>
+                        </div>
+                        <div class="col-md-3 mb-2 text-white font-family-parrafos">
+                          <p>Número de piezas:</p>
+                          <p>5</p>
+                        </div>
+                        <div class="col-md-3 mb-2 text-white font-family-parrafos">
+                          <p>Color:</p>
+                          <p>Madera natural</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Más detalles -->
+                    <div class="bg-white border border-top-0 px-4 py-3">
+                      <h6 class="fw-bold font-family-parrafos">Más detalles</h6>
+                      <p class="mb-0 font-family-parrafos">
+                        Madera sólida de roble con acabado en barniz, con cojines de tela resistentes en sus 4 sillas, esta mesa tiene un diseño funcional y espacio suficiente para decoración en el centro de la mesa, sus dimensiones son 120m de largo x 0.60m de ancho y 0.45 de alto, cada silla tiene una dimensión de 0.50m de largo x 0.50 de ancho y 0.90 de alto.
+                      </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
         <footer th:fragment="footer" class="p-0.5 mt-5">
 
             <div class="color-nav text-white py-4">
